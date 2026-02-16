@@ -1,0 +1,18 @@
+{
+  "batch_size": 10,
+  "correctness_sample_rate": 0.01,
+  "duration": "0s",
+  "experiment_name": "batch_10",
+  "forward_proxy_url": "",
+  "key_bits": 1024,
+  "num_users": 10,
+  "operation_mode": "mixed",
+  "proxy_delay_ms": 0,
+  "proxy_pool_size": 0,
+  "requests_per_user": 100,
+  "retry_backoff_ms": 150,
+  "retry_max_attempts": 2,
+  "run_id": "run-5ea09af84fd30a3a",
+  "seed": 42,
+  "started_at": "2026-02-16T11:53:43+06:00"
+}

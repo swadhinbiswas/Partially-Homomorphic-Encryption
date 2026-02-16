@@ -1,0 +1,17 @@
+{
+  "run_id": "run-bd5bbfe9d6051585",
+  "experiment_name": "latency_10ms",
+  "operation_mode": "mixed",
+  "completed": 1000,
+  "failed": 0,
+  "retries": 0,
+  "failure_stage_counts": {},
+  "failure_code_counts": {},
+  "operation_counts": {
+    "count": 500,
+    "sum": 500
+  },
+  "correctness_sampled": 8,
+  "correctness_passed": 8,
+  "correctness_failed": 0
+}

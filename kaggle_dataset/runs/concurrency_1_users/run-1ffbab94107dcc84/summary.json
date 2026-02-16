@@ -1,0 +1,17 @@
+{
+  "run_id": "run-1ffbab94107dcc84",
+  "experiment_name": "concurrency_1_users",
+  "operation_mode": "mixed",
+  "completed": 100,
+  "failed": 0,
+  "retries": 0,
+  "failure_stage_counts": {},
+  "failure_code_counts": {},
+  "operation_counts": {
+    "count": 50,
+    "sum": 50
+  },
+  "correctness_sampled": 0,
+  "correctness_passed": 0,
+  "correctness_failed": 0
+}

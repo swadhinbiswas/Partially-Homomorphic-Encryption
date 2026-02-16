@@ -1,0 +1,379 @@
+2026/02/16 11:48:06.741733 ================================================================
+2026/02/16 11:48:06.741760   Privacy-First REST API Gateway — PHE Experiment Environment
+2026/02/16 11:48:06.741761 ================================================================
+2026/02/16 11:48:06.741861 Config: key_bits=1024 workers=16 queue=10000 data=data chunk=1000000 seed=42
+2026/02/16 11:48:06.741864 Generating Paillier key pair (1024 bits)...
+2026/02/16 11:48:06.752077 Key pair generated. Public key available to gateway; private key stays with simulator.
+2026/02/16 11:48:06.752092 Gateway starting on :8082
+2026/02/16 11:48:06.752097 Proxy starting on :8081 → gateway :8082
+2026/02/16 11:48:06.752934 Services ready.
+2026/02/16 11:48:06.752938 ═══════ EXPERIMENT: Concurrency Scaling ═══════
+2026/02/16 11:48:06.752939 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 11:48:06.752943   [concurrency_1_users] run 1/2
+2026/02/16 11:48:06.752944 >>> [concurrency_1_users] starting
+2026/02/16 11:48:06.753186   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:06.753192   [SIM] start: users=1 batch=10 expected=100 duration=0s proxies=0
+2026/02/16 11:48:07.953207   [SIM] done: completed=100 failed=0
+2026/02/16 11:48:07.953277 <<< [concurrency_1_users] done: 100 records in 1.200085192s
+2026/02/16 11:48:07.953279   [concurrency_1_users] run 2/2
+2026/02/16 11:48:07.953280 >>> [concurrency_1_users] starting
+2026/02/16 11:48:07.953572   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:07.953582   [SIM] start: users=1 batch=10 expected=100 duration=0s proxies=0
+2026/02/16 11:48:09.140528   [SIM] done: completed=100 failed=0
+2026/02/16 11:48:09.140576 <<< [concurrency_1_users] done: 100 records in 1.186994415s
+2026/02/16 11:48:09.140579   [concurrency_10_users] run 1/2
+2026/02/16 11:48:09.140579 >>> [concurrency_10_users] starting
+2026/02/16 11:48:09.140879   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:09.140917   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:48:10.682447   [SIM] done: completed=1000 failed=0
+2026/02/16 11:48:10.682503 <<< [concurrency_10_users] done: 1000 records in 1.54158623s
+2026/02/16 11:48:10.682507   [concurrency_10_users] run 2/2
+2026/02/16 11:48:10.682508 >>> [concurrency_10_users] starting
+2026/02/16 11:48:10.684986   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:10.684993   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:48:12.217569   [SIM] done: completed=1000 failed=0
+2026/02/16 11:48:12.217626 <<< [concurrency_10_users] done: 1000 records in 1.532633237s
+2026/02/16 11:48:12.217628   [concurrency_100_users] run 1/2
+2026/02/16 11:48:12.217629 >>> [concurrency_100_users] starting
+2026/02/16 11:48:12.219039   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:12.219040   [SIM] start: users=100 batch=10 expected=10000 duration=0s proxies=0
+2026/02/16 11:48:17.243479     [concurrency_100_users] completed=4729 failed=0 rate=943.5/s elapsed=5.0s
+2026/02/16 11:48:22.232405     [concurrency_100_users] completed=9626 failed=0 rate=962.5/s elapsed=10.0s
+2026/02/16 11:48:22.668877   [SIM] done: completed=10000 failed=0
+2026/02/16 11:48:22.668953 <<< [concurrency_100_users] done: 10000 records in 10.449912701s
+2026/02/16 11:48:22.668959   [concurrency_100_users] run 2/2
+2026/02/16 11:48:22.668960 >>> [concurrency_100_users] starting
+2026/02/16 11:48:22.673696   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:22.673700   [SIM] start: users=100 batch=10 expected=10000 duration=0s proxies=0
+2026/02/16 11:48:27.678787     [concurrency_100_users] completed=4739 failed=0 rate=946.8/s elapsed=5.0s
+2026/02/16 11:48:32.679547     [concurrency_100_users] completed=9627 failed=0 rate=962.1/s elapsed=10.0s
+2026/02/16 11:48:33.082998   [SIM] done: completed=10000 failed=0
+2026/02/16 11:48:33.083075 <<< [concurrency_100_users] done: 10000 records in 10.409374902s
+2026/02/16 11:48:33.083081   [concurrency_500_users] run 1/2
+2026/02/16 11:48:33.083083 >>> [concurrency_500_users] starting
+2026/02/16 11:48:33.087972   [SIM] Direct connection (no external proxy)
+2026/02/16 11:48:33.087975   [SIM] start: users=500 batch=10 expected=50000 duration=0s proxies=0
+2026/02/16 11:48:38.111506     [concurrency_500_users] completed=4405 failed=0 rate=879.5/s elapsed=5.0s
+2026/02/16 11:48:43.112656     [concurrency_500_users] completed=9349 failed=0 rate=934.0/s elapsed=10.0s
+2026/02/16 11:48:48.107132     [concurrency_500_users] completed=14246 failed=0 rate=949.5/s elapsed=15.0s
+2026/02/16 11:48:53.118081     [concurrency_500_users] completed=19138 failed=0 rate=956.2/s elapsed=20.0s
+2026/02/16 11:48:58.118539     [concurrency_500_users] completed=23997 failed=0 rate=959.3/s elapsed=25.0s
+2026/02/16 11:49:03.109994     [concurrency_500_users] completed=28895 failed=0 rate=962.9/s elapsed=30.0s
+2026/02/16 11:49:08.113727     [concurrency_500_users] completed=33761 failed=0 rate=964.3/s elapsed=35.0s
+2026/02/16 11:49:13.103282     [concurrency_500_users] completed=38696 failed=0 rate=967.4/s elapsed=40.0s
+2026/02/16 11:49:18.110605     [concurrency_500_users] completed=43642 failed=0 rate=969.7/s elapsed=45.0s
+2026/02/16 11:49:23.110340     [concurrency_500_users] completed=48505 failed=0 rate=970.0/s elapsed=50.0s
+2026/02/16 11:49:24.554172   [SIM] done: completed=50000 failed=0
+2026/02/16 11:49:24.554251 <<< [concurrency_500_users] done: 50000 records in 51.466275868s
+2026/02/16 11:49:24.554259   [concurrency_500_users] run 2/2
+2026/02/16 11:49:24.554260 >>> [concurrency_500_users] starting
+2026/02/16 11:49:24.560439   [SIM] Direct connection (no external proxy)
+2026/02/16 11:49:24.560445   [SIM] start: users=500 batch=10 expected=50000 duration=0s proxies=0
+2026/02/16 11:49:29.572299     [concurrency_500_users] completed=4404 failed=0 rate=878.7/s elapsed=5.0s
+2026/02/16 11:49:34.568371     [concurrency_500_users] completed=9223 failed=0 rate=921.6/s elapsed=10.0s
+2026/02/16 11:49:39.571188     [concurrency_500_users] completed=14036 failed=0 rate=935.1/s elapsed=15.0s
+2026/02/16 11:49:44.569922     [concurrency_500_users] completed=19075 failed=0 rate=953.3/s elapsed=20.0s
+2026/02/16 11:49:49.570594     [concurrency_500_users] completed=23815 failed=0 rate=952.2/s elapsed=25.0s
+2026/02/16 11:49:54.561460     [concurrency_500_users] completed=28697 failed=0 rate=956.5/s elapsed=30.0s
+2026/02/16 11:49:59.565954     [concurrency_500_users] completed=33586 failed=0 rate=959.4/s elapsed=35.0s
+2026/02/16 11:50:04.579399     [concurrency_500_users] completed=38457 failed=0 rate=961.0/s elapsed=40.0s
+2026/02/16 11:50:09.567476     [concurrency_500_users] completed=43334 failed=0 rate=962.8/s elapsed=45.0s
+2026/02/16 11:50:14.562472     [concurrency_500_users] completed=48382 failed=0 rate=967.6/s elapsed=50.0s
+2026/02/16 11:50:16.082590   [SIM] done: completed=50000 failed=0
+2026/02/16 11:50:16.082656 <<< [concurrency_500_users] done: 50000 records in 51.522212032s
+2026/02/16 11:50:16.082661   [concurrency_1000_users] run 1/2
+2026/02/16 11:50:16.082661 >>> [concurrency_1000_users] starting
+2026/02/16 11:50:16.087214   [SIM] Direct connection (no external proxy)
+2026/02/16 11:50:16.087217   [SIM] start: users=1000 batch=10 expected=100000 duration=0s proxies=0
+2026/02/16 11:50:21.107833     [concurrency_1000_users] completed=3924 failed=0 rate=783.6/s elapsed=5.0s
+2026/02/16 11:50:26.114015     [concurrency_1000_users] completed=8778 failed=0 rate=876.6/s elapsed=10.0s
+2026/02/16 11:50:31.104822     [concurrency_1000_users] completed=13731 failed=0 rate=915.1/s elapsed=15.0s
+2026/02/16 11:50:36.104539     [concurrency_1000_users] completed=18546 failed=0 rate=927.1/s elapsed=20.0s
+2026/02/16 11:50:41.105013     [concurrency_1000_users] completed=23413 failed=0 rate=936.3/s elapsed=25.0s
+2026/02/16 11:50:46.107181     [concurrency_1000_users] completed=28311 failed=0 rate=943.5/s elapsed=30.0s
+2026/02/16 11:50:51.105052     [concurrency_1000_users] completed=33156 failed=0 rate=947.2/s elapsed=35.0s
+2026/02/16 11:50:56.112332     [concurrency_1000_users] completed=38030 failed=0 rate=950.5/s elapsed=40.0s
+2026/02/16 11:51:01.113485     [concurrency_1000_users] completed=42799 failed=0 rate=950.8/s elapsed=45.0s
+2026/02/16 11:51:06.106682     [concurrency_1000_users] completed=47684 failed=0 rate=953.6/s elapsed=50.0s
+2026/02/16 11:51:11.100850     [concurrency_1000_users] completed=52586 failed=0 rate=956.1/s elapsed=55.0s
+2026/02/16 11:51:16.104021     [concurrency_1000_users] completed=57437 failed=0 rate=957.2/s elapsed=60.0s
+2026/02/16 11:51:21.109269     [concurrency_1000_users] completed=62310 failed=0 rate=958.5/s elapsed=65.0s
+2026/02/16 11:51:26.113972     [concurrency_1000_users] completed=67199 failed=0 rate=959.8/s elapsed=70.0s
+2026/02/16 11:51:31.103260     [concurrency_1000_users] completed=72075 failed=0 rate=961.0/s elapsed=75.0s
+2026/02/16 11:51:36.113869     [concurrency_1000_users] completed=77045 failed=0 rate=962.9/s elapsed=80.0s
+2026/02/16 11:51:41.108929     [concurrency_1000_users] completed=81932 failed=0 rate=963.8/s elapsed=85.0s
+2026/02/16 11:51:46.110361     [concurrency_1000_users] completed=86903 failed=0 rate=965.5/s elapsed=90.0s
+2026/02/16 11:51:51.132147     [concurrency_1000_users] completed=91986 failed=0 rate=967.9/s elapsed=95.0s
+2026/02/16 11:51:56.112325     [concurrency_1000_users] completed=97013 failed=0 rate=970.0/s elapsed=100.0s
+2026/02/16 11:51:58.890556   [SIM] done: completed=100000 failed=0
+2026/02/16 11:51:58.890660 <<< [concurrency_1000_users] done: 100000 records in 1m42.803442351s
+2026/02/16 11:51:58.890665   [concurrency_1000_users] run 2/2
+2026/02/16 11:51:58.890667 >>> [concurrency_1000_users] starting
+2026/02/16 11:51:58.896314   [SIM] Direct connection (no external proxy)
+2026/02/16 11:51:58.896318   [SIM] start: users=1000 batch=10 expected=100000 duration=0s proxies=0
+2026/02/16 11:52:03.901653     [concurrency_1000_users] completed=3957 failed=0 rate=790.6/s elapsed=5.0s
+2026/02/16 11:52:08.910366     [concurrency_1000_users] completed=8798 failed=0 rate=878.6/s elapsed=10.0s
+2026/02/16 11:52:13.906292     [concurrency_1000_users] completed=13660 failed=0 rate=910.1/s elapsed=15.0s
+2026/02/16 11:52:18.899869     [concurrency_1000_users] completed=18525 failed=0 rate=926.1/s elapsed=20.0s
+2026/02/16 11:52:23.896999     [concurrency_1000_users] completed=23343 failed=0 rate=933.7/s elapsed=25.0s
+2026/02/16 11:52:28.900451     [concurrency_1000_users] completed=28116 failed=0 rate=937.1/s elapsed=30.0s
+2026/02/16 11:52:32.035858 http: proxy error: context canceled
+2026/02/16 11:52:32.104463 http: proxy error: context canceled
+2026/02/16 11:52:33.899320     [concurrency_1000_users] completed=33042 failed=0 rate=944.0/s elapsed=35.0s
+2026/02/16 11:52:38.901948     [concurrency_1000_users] completed=37887 failed=0 rate=947.0/s elapsed=40.0s
+2026/02/16 11:52:43.896827     [concurrency_1000_users] completed=42763 failed=0 rate=950.3/s elapsed=45.0s
+2026/02/16 11:52:48.916029     [concurrency_1000_users] completed=47638 failed=0 rate=952.4/s elapsed=50.0s
+2026/02/16 11:52:53.897150     [concurrency_1000_users] completed=52654 failed=0 rate=957.3/s elapsed=55.0s
+2026/02/16 11:52:58.896632     [concurrency_1000_users] completed=57332 failed=0 rate=955.5/s elapsed=60.0s
+2026/02/16 11:53:03.915062     [concurrency_1000_users] completed=62236 failed=0 rate=957.2/s elapsed=65.0s
+2026/02/16 11:53:08.909080     [concurrency_1000_users] completed=67124 failed=0 rate=958.7/s elapsed=70.0s
+2026/02/16 11:53:13.898201     [concurrency_1000_users] completed=71972 failed=0 rate=959.6/s elapsed=75.0s
+2026/02/16 11:53:18.906320     [concurrency_1000_users] completed=76903 failed=0 rate=961.2/s elapsed=80.0s
+2026/02/16 11:53:23.904622     [concurrency_1000_users] completed=81886 failed=0 rate=963.3/s elapsed=85.0s
+2026/02/16 11:53:29.003103     [concurrency_1000_users] completed=86970 failed=0 rate=965.2/s elapsed=90.1s
+2026/02/16 11:53:33.911308     [concurrency_1000_users] completed=91891 failed=0 rate=967.1/s elapsed=95.0s
+2026/02/16 11:53:38.903258     [concurrency_1000_users] completed=96905 failed=0 rate=969.0/s elapsed=100.0s
+2026/02/16 11:53:41.942045   [SIM] done: completed=100000 failed=0
+2026/02/16 11:53:41.942123 <<< [concurrency_1000_users] done: 100000 records in 1m43.045805161s
+2026/02/16 11:53:41.942134 ═══════ EXPERIMENT: Batch Size Scaling ═══════
+2026/02/16 11:53:41.942139 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 11:53:41.942142   [batch_1] run 1/2
+2026/02/16 11:53:41.942143 >>> [batch_1] starting
+2026/02/16 11:53:41.951501   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:41.951505   [SIM] start: users=10 batch=1 expected=1000 duration=0s proxies=0
+2026/02/16 11:53:42.202191   [SIM] done: completed=1000 failed=0
+2026/02/16 11:53:42.202235 <<< [batch_1] done: 1000 records in 250.730945ms
+2026/02/16 11:53:42.202239   [batch_1] run 2/2
+2026/02/16 11:53:42.202240 >>> [batch_1] starting
+2026/02/16 11:53:42.202326   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:42.202327   [SIM] start: users=10 batch=1 expected=1000 duration=0s proxies=0
+2026/02/16 11:53:42.463857   [SIM] done: completed=1000 failed=0
+2026/02/16 11:53:42.463936 <<< [batch_1] done: 1000 records in 261.608595ms
+2026/02/16 11:53:42.463942   [batch_10] run 1/2
+2026/02/16 11:53:42.463944 >>> [batch_10] starting
+2026/02/16 11:53:42.469051   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:42.469809   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:53:43.941094   [SIM] done: completed=1000 failed=0
+2026/02/16 11:53:43.941145 <<< [batch_10] done: 1000 records in 1.471339526s
+2026/02/16 11:53:43.941150   [batch_10] run 2/2
+2026/02/16 11:53:43.941151 >>> [batch_10] starting
+2026/02/16 11:53:43.941215   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:43.941217   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:53:45.451812   [SIM] done: completed=1000 failed=0
+2026/02/16 11:53:45.451876 <<< [batch_10] done: 1000 records in 1.510658876s
+2026/02/16 11:53:45.451880   [batch_100] run 1/2
+2026/02/16 11:53:45.451881 >>> [batch_100] starting
+2026/02/16 11:53:45.452008   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:45.452011   [SIM] start: users=10 batch=100 expected=1000 duration=0s proxies=0
+2026/02/16 11:53:50.452209     [batch_100] completed=390 failed=0 rate=78.0/s elapsed=5.0s
+2026/02/16 11:53:55.452309     [batch_100] completed=780 failed=0 rate=78.0/s elapsed=10.0s
+2026/02/16 11:53:58.598039   [SIM] done: completed=1000 failed=0
+2026/02/16 11:53:58.598095 <<< [batch_100] done: 1000 records in 13.146084323s
+2026/02/16 11:53:58.598098   [batch_100] run 2/2
+2026/02/16 11:53:58.598099 >>> [batch_100] starting
+2026/02/16 11:53:58.598161   [SIM] Direct connection (no external proxy)
+2026/02/16 11:53:58.598162   [SIM] start: users=10 batch=100 expected=1000 duration=0s proxies=0
+2026/02/16 11:54:03.598786     [batch_100] completed=384 failed=0 rate=76.8/s elapsed=5.0s
+2026/02/16 11:54:08.598312     [batch_100] completed=772 failed=0 rate=77.2/s elapsed=10.0s
+2026/02/16 11:54:11.780538   [SIM] done: completed=1000 failed=0
+2026/02/16 11:54:11.780593 <<< [batch_100] done: 1000 records in 13.182430555s
+2026/02/16 11:54:11.780595   [batch_1000] run 1/2
+2026/02/16 11:54:11.780596 >>> [batch_1000] starting
+2026/02/16 11:54:11.782109   [SIM] Direct connection (no external proxy)
+2026/02/16 11:54:11.782111   [SIM] start: users=10 batch=1000 expected=1000 duration=0s proxies=0
+2026/02/16 11:54:16.782860     [batch_1000] completed=37 failed=0 rate=7.4/s elapsed=5.0s
+2026/02/16 11:54:21.782626     [batch_1000] completed=77 failed=0 rate=7.7/s elapsed=10.0s
+2026/02/16 11:54:26.783109     [batch_1000] completed=119 failed=0 rate=7.9/s elapsed=15.0s
+2026/02/16 11:54:31.782720     [batch_1000] completed=157 failed=0 rate=7.8/s elapsed=20.0s
+2026/02/16 11:54:36.782333     [batch_1000] completed=199 failed=0 rate=8.0/s elapsed=25.0s
+2026/02/16 11:54:41.783028     [batch_1000] completed=239 failed=0 rate=8.0/s elapsed=30.0s
+2026/02/16 11:54:46.782850     [batch_1000] completed=281 failed=0 rate=8.0/s elapsed=35.0s
+2026/02/16 11:54:51.783132     [batch_1000] completed=321 failed=0 rate=8.0/s elapsed=40.0s
+2026/02/16 11:54:56.782432     [batch_1000] completed=360 failed=0 rate=8.0/s elapsed=45.0s
+2026/02/16 11:55:01.783266     [batch_1000] completed=401 failed=0 rate=8.0/s elapsed=50.0s
+2026/02/16 11:55:06.782960     [batch_1000] completed=443 failed=0 rate=8.1/s elapsed=55.0s
+2026/02/16 11:55:11.782424     [batch_1000] completed=482 failed=0 rate=8.0/s elapsed=60.0s
+2026/02/16 11:55:16.783314     [batch_1000] completed=524 failed=0 rate=8.1/s elapsed=65.0s
+2026/02/16 11:55:21.782404     [batch_1000] completed=564 failed=0 rate=8.1/s elapsed=70.0s
+2026/02/16 11:55:26.782535     [batch_1000] completed=604 failed=0 rate=8.1/s elapsed=75.0s
+2026/02/16 11:55:31.782356     [batch_1000] completed=644 failed=0 rate=8.0/s elapsed=80.0s
+2026/02/16 11:55:36.783239     [batch_1000] completed=685 failed=0 rate=8.1/s elapsed=85.0s
+2026/02/16 11:55:41.782612     [batch_1000] completed=726 failed=0 rate=8.1/s elapsed=90.0s
+2026/02/16 11:55:46.782337     [batch_1000] completed=767 failed=0 rate=8.1/s elapsed=95.0s
+2026/02/16 11:55:51.782735     [batch_1000] completed=806 failed=0 rate=8.1/s elapsed=100.0s
+2026/02/16 11:55:56.782582     [batch_1000] completed=847 failed=0 rate=8.1/s elapsed=105.0s
+2026/02/16 11:56:01.783298     [batch_1000] completed=886 failed=0 rate=8.1/s elapsed=110.0s
+2026/02/16 11:56:06.783144     [batch_1000] completed=926 failed=0 rate=8.1/s elapsed=115.0s
+2026/02/16 11:56:11.782886     [batch_1000] completed=965 failed=0 rate=8.0/s elapsed=120.0s
+2026/02/16 11:56:16.519092   [SIM] done: completed=1000 failed=0
+2026/02/16 11:56:16.519156 <<< [batch_1000] done: 1000 records in 2m4.737044976s
+2026/02/16 11:56:16.519159   [batch_1000] run 2/2
+2026/02/16 11:56:16.519160 >>> [batch_1000] starting
+2026/02/16 11:56:16.523368   [SIM] Direct connection (no external proxy)
+2026/02/16 11:56:16.523375   [SIM] start: users=10 batch=1000 expected=1000 duration=0s proxies=0
+2026/02/16 11:56:21.524260     [batch_1000] completed=35 failed=0 rate=7.0/s elapsed=5.0s
+2026/02/16 11:56:26.524063     [batch_1000] completed=74 failed=0 rate=7.4/s elapsed=10.0s
+2026/02/16 11:56:31.523836     [batch_1000] completed=116 failed=0 rate=7.7/s elapsed=15.0s
+2026/02/16 11:56:36.524296     [batch_1000] completed=155 failed=0 rate=7.7/s elapsed=20.0s
+2026/02/16 11:56:41.523831     [batch_1000] completed=195 failed=0 rate=7.8/s elapsed=25.0s
+2026/02/16 11:56:46.523795     [batch_1000] completed=235 failed=0 rate=7.8/s elapsed=30.0s
+2026/02/16 11:56:51.524190     [batch_1000] completed=275 failed=0 rate=7.9/s elapsed=35.0s
+2026/02/16 11:56:56.524444     [batch_1000] completed=315 failed=0 rate=7.9/s elapsed=40.0s
+2026/02/16 11:57:01.524385     [batch_1000] completed=356 failed=0 rate=7.9/s elapsed=45.0s
+2026/02/16 11:57:06.524214     [batch_1000] completed=394 failed=0 rate=7.9/s elapsed=50.0s
+2026/02/16 11:57:11.523674     [batch_1000] completed=434 failed=0 rate=7.9/s elapsed=55.0s
+2026/02/16 11:57:16.524274     [batch_1000] completed=475 failed=0 rate=7.9/s elapsed=60.0s
+2026/02/16 11:57:21.523868     [batch_1000] completed=514 failed=0 rate=7.9/s elapsed=65.0s
+2026/02/16 11:57:26.523712     [batch_1000] completed=554 failed=0 rate=7.9/s elapsed=70.0s
+2026/02/16 11:57:31.524405     [batch_1000] completed=595 failed=0 rate=7.9/s elapsed=75.0s
+2026/02/16 11:57:36.523629     [batch_1000] completed=635 failed=0 rate=7.9/s elapsed=80.0s
+2026/02/16 11:57:41.523848     [batch_1000] completed=676 failed=0 rate=8.0/s elapsed=85.0s
+2026/02/16 11:57:46.523594     [batch_1000] completed=716 failed=0 rate=8.0/s elapsed=90.0s
+2026/02/16 11:57:51.524234     [batch_1000] completed=757 failed=0 rate=8.0/s elapsed=95.0s
+2026/02/16 11:57:56.523931     [batch_1000] completed=797 failed=0 rate=8.0/s elapsed=100.0s
+2026/02/16 11:58:01.523747     [batch_1000] completed=835 failed=0 rate=8.0/s elapsed=105.0s
+2026/02/16 11:58:06.523789     [batch_1000] completed=875 failed=0 rate=8.0/s elapsed=110.0s
+2026/02/16 11:58:11.523853     [batch_1000] completed=915 failed=0 rate=8.0/s elapsed=115.0s
+2026/02/16 11:58:16.524109     [batch_1000] completed=956 failed=0 rate=8.0/s elapsed=120.0s
+2026/02/16 11:58:21.524418     [batch_1000] completed=996 failed=0 rate=8.0/s elapsed=125.0s
+2026/02/16 11:58:22.971803   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:22.971891 <<< [batch_1000] done: 1000 records in 2m6.44851673s
+2026/02/16 11:58:22.971898 ═══════ EXPERIMENT: Proxy Latency Impact ═══════
+2026/02/16 11:58:22.971900 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 11:58:22.971903   [latency_0ms] run 1/2
+2026/02/16 11:58:22.971904 >>> [latency_0ms] starting
+2026/02/16 11:58:22.983635   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:22.983640   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:24.676128   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:24.676216 <<< [latency_0ms] done: 1000 records in 1.692576544s
+2026/02/16 11:58:24.676218   [latency_0ms] run 2/2
+2026/02/16 11:58:24.676219 >>> [latency_0ms] starting
+2026/02/16 11:58:24.678444   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:24.678448   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:26.252363   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:26.252498 <<< [latency_0ms] done: 1000 records in 1.574049177s
+2026/02/16 11:58:26.252512 [PROXY] config updated: latency=10ms jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 11:58:26.252518   [latency_10ms] run 1/2
+2026/02/16 11:58:26.252520 >>> [latency_10ms] starting
+2026/02/16 11:58:26.260534   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:26.260553   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:28.626430   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:28.626500 <<< [latency_10ms] done: 1000 records in 2.365949775s
+2026/02/16 11:58:28.626504   [latency_10ms] run 2/2
+2026/02/16 11:58:28.626505 >>> [latency_10ms] starting
+2026/02/16 11:58:28.635345   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:28.635353   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:31.025992   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:31.026098 <<< [latency_10ms] done: 1000 records in 2.390745079s
+2026/02/16 11:58:31.026113 [PROXY] config updated: latency=50ms jitter=0s drop=0.00% (was: latency=10ms drop=0.00%)
+2026/02/16 11:58:31.026117   [latency_50ms] run 1/2
+2026/02/16 11:58:31.026118 >>> [latency_50ms] starting
+2026/02/16 11:58:31.032482   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:31.032486   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:36.032800     [latency_50ms] completed=722 failed=0 rate=144.4/s elapsed=5.0s
+2026/02/16 11:58:37.796896   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:37.796963 <<< [latency_50ms] done: 1000 records in 6.764477096s
+2026/02/16 11:58:37.796970   [latency_50ms] run 2/2
+2026/02/16 11:58:37.796971 >>> [latency_50ms] starting
+2026/02/16 11:58:37.801287   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:37.801289   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:42.801823     [latency_50ms] completed=690 failed=0 rate=138.0/s elapsed=5.0s
+2026/02/16 11:58:44.819465   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:44.819711 <<< [latency_50ms] done: 1000 records in 7.018420163s
+2026/02/16 11:58:44.819736 [PROXY] config updated: latency=100ms jitter=0s drop=0.00% (was: latency=50ms drop=0.00%)
+2026/02/16 11:58:44.819746   [latency_100ms] run 1/2
+2026/02/16 11:58:44.819750 >>> [latency_100ms] starting
+2026/02/16 11:58:44.834319   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:44.834324   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:58:49.835133     [latency_100ms] completed=430 failed=0 rate=86.0/s elapsed=5.0s
+2026/02/16 11:58:54.834466     [latency_100ms] completed=860 failed=0 rate=86.0/s elapsed=10.0s
+2026/02/16 11:58:56.484696   [SIM] done: completed=1000 failed=0
+2026/02/16 11:58:56.484751 <<< [latency_100ms] done: 1000 records in 11.650427843s
+2026/02/16 11:58:56.484755   [latency_100ms] run 2/2
+2026/02/16 11:58:56.484756 >>> [latency_100ms] starting
+2026/02/16 11:58:56.495120   [SIM] Direct connection (no external proxy)
+2026/02/16 11:58:56.495127   [SIM] start: users=10 batch=10 expected=1000 duration=0s proxies=0
+2026/02/16 11:59:01.496076     [latency_100ms] completed=420 failed=0 rate=84.0/s elapsed=5.0s
+2026/02/16 11:59:06.495931     [latency_100ms] completed=850 failed=0 rate=85.0/s elapsed=10.0s
+2026/02/16 11:59:08.152273   [SIM] done: completed=1000 failed=0
+2026/02/16 11:59:08.152518 <<< [latency_100ms] done: 1000 records in 11.657390664s
+2026/02/16 11:59:08.152542 ═══════ EXPERIMENT: Throughput Stress Test ═══════
+2026/02/16 11:59:08.152549 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=100ms drop=0.00%)
+2026/02/16 11:59:08.152556   [throughput_burst] run 1/2
+2026/02/16 11:59:08.152559 >>> [throughput_burst] starting
+2026/02/16 11:59:08.152872   [SIM] Direct connection (no external proxy)
+2026/02/16 11:59:08.152877   [SIM] start: users=1000 batch=10 expected=unlimited duration=30s proxies=0
+2026/02/16 11:59:13.162701     [throughput_burst] completed=3892 failed=0 rate=776.9/s elapsed=5.0s
+2026/02/16 11:59:18.163661     [throughput_burst] completed=8842 failed=0 rate=883.2/s elapsed=10.0s
+2026/02/16 11:59:23.159259     [throughput_burst] completed=13501 failed=0 rate=899.7/s elapsed=15.0s
+2026/02/16 11:59:28.172516     [throughput_burst] completed=18386 failed=0 rate=918.4/s elapsed=20.0s
+2026/02/16 11:59:33.161996     [throughput_burst] completed=23189 failed=0 rate=927.2/s elapsed=25.0s
+2026/02/16 11:59:38.157783     [throughput_burst] completed=28067 failed=0 rate=935.4/s elapsed=30.0s
+2026/02/16 11:59:38.307203   [SIM] done: completed=29073 failed=0
+2026/02/16 11:59:38.307314 <<< [throughput_burst] done: 29073 records in 30.154436739s
+2026/02/16 11:59:38.307321   [throughput_burst] run 2/2
+2026/02/16 11:59:38.307323 >>> [throughput_burst] starting
+2026/02/16 11:59:38.311637   [SIM] Direct connection (no external proxy)
+2026/02/16 11:59:38.311640   [SIM] start: users=1000 batch=10 expected=unlimited duration=30s proxies=0
+2026/02/16 11:59:43.316873     [throughput_burst] completed=3895 failed=0 rate=778.2/s elapsed=5.0s
+2026/02/16 11:59:48.318505     [throughput_burst] completed=8680 failed=0 rate=867.4/s elapsed=10.0s
+2026/02/16 11:59:53.314875     [throughput_burst] completed=13477 failed=0 rate=898.3/s elapsed=15.0s
+2026/02/16 11:59:58.319264     [throughput_burst] completed=18301 failed=0 rate=914.7/s elapsed=20.0s
+2026/02/16 12:00:03.317547     [throughput_burst] completed=23062 failed=0 rate=922.3/s elapsed=25.0s
+2026/02/16 12:00:08.324305     [throughput_burst] completed=27813 failed=0 rate=926.7/s elapsed=30.0s
+2026/02/16 12:00:08.393572   [SIM] done: completed=28761 failed=0
+2026/02/16 12:00:08.393628 <<< [throughput_burst] done: 28761 records in 30.081987882s
+2026/02/16 12:00:08.393630 ═══════ EXPERIMENT: Failure Injection ═══════
+2026/02/16 12:00:08.393631 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 12:00:08.393634   [failure_drop_0pct] run 1/2
+2026/02/16 12:00:08.393635 >>> [failure_drop_0pct] starting
+2026/02/16 12:00:08.405561   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:08.405564   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:13.412027     [failure_drop_0pct] completed=4820 failed=0 rate=962.8/s elapsed=5.0s
+2026/02/16 12:00:13.671386   [SIM] done: completed=5000 failed=0
+2026/02/16 12:00:13.671514 <<< [failure_drop_0pct] done: 5000 records in 5.26594966s
+2026/02/16 12:00:13.671523   [failure_drop_0pct] run 2/2
+2026/02/16 12:00:13.671525 >>> [failure_drop_0pct] starting
+2026/02/16 12:00:13.671690   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:13.671694   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:18.673725     [failure_drop_0pct] completed=4819 failed=0 rate=963.5/s elapsed=5.0s
+2026/02/16 12:00:18.940942   [SIM] done: completed=5000 failed=0
+2026/02/16 12:00:18.941027 <<< [failure_drop_0pct] done: 5000 records in 5.269332902s
+2026/02/16 12:00:18.941033 [PROXY] config updated: latency=0s jitter=0s drop=1.00% (was: latency=0s drop=0.00%)
+2026/02/16 12:00:18.941038   [failure_drop_1pct] run 1/2
+2026/02/16 12:00:18.941039 >>> [failure_drop_1pct] starting
+2026/02/16 12:00:18.941187   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:18.941189   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:23.951318     [failure_drop_1pct] completed=4788 failed=0 rate=955.7/s elapsed=5.0s
+2026/02/16 12:00:24.193739   [SIM] done: completed=5000 failed=0
+2026/02/16 12:00:24.193792 <<< [failure_drop_1pct] done: 5000 records in 5.252602946s
+2026/02/16 12:00:24.193796   [failure_drop_1pct] run 2/2
+2026/02/16 12:00:24.193797 >>> [failure_drop_1pct] starting
+2026/02/16 12:00:24.194864   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:24.194866   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:29.215815     [failure_drop_1pct] completed=4736 failed=0 rate=946.5/s elapsed=5.0s
+2026/02/16 12:00:29.634760   [SIM] done: completed=5000 failed=0
+2026/02/16 12:00:29.634808 <<< [failure_drop_1pct] done: 5000 records in 5.439942577s
+2026/02/16 12:00:29.634811 [PROXY] config updated: latency=0s jitter=0s drop=5.00% (was: latency=0s drop=1.00%)
+2026/02/16 12:00:29.634813   [failure_drop_5pct] run 1/2
+2026/02/16 12:00:29.634814 >>> [failure_drop_5pct] starting
+2026/02/16 12:00:29.636072   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:29.636074   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:34.636197     [failure_drop_5pct] completed=4794 failed=6 rate=960.0/s elapsed=5.0s
+2026/02/16 12:00:35.504122   [SIM] done: completed=4993 failed=7
+2026/02/16 12:00:35.504184 <<< [failure_drop_5pct] done: 5000 records in 5.868109904s
+2026/02/16 12:00:35.504186   [failure_drop_5pct] run 2/2
+2026/02/16 12:00:35.504187 >>> [failure_drop_5pct] starting
+2026/02/16 12:00:35.505871   [SIM] Direct connection (no external proxy)
+2026/02/16 12:00:35.505873   [SIM] start: users=50 batch=10 expected=5000 duration=0s proxies=0
+2026/02/16 12:00:40.525508     [failure_drop_5pct] completed=4836 failed=12 rate=969.5/s elapsed=5.0s
+2026/02/16 12:00:40.910876   [SIM] done: completed=4988 failed=12
+2026/02/16 12:00:40.910937 <<< [failure_drop_5pct] done: 5000 records in 5.405063528s
+2026/02/16 12:00:40.910941 ================================================================
+2026/02/16 12:00:40.910942   ALL EXPERIMENTS COMPLETE
+2026/02/16 12:00:40.910946   Total records : 426034
+2026/02/16 12:00:40.910946   Total time    : 12m34.158008493s
+2026/02/16 12:00:40.910947   Data directory: data/
+2026/02/16 12:00:40.910948 ================================================================
+Wrote 34 run rows to data/analysis/summary_by_run.csv
+Wrote 17 aggregate rows to data/analysis/summary_aggregated.csv

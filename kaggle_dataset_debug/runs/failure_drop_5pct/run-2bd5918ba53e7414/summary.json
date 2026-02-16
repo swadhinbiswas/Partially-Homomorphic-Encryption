@@ -1,0 +1,21 @@
+{
+  "run_id": "run-2bd5918ba53e7414",
+  "experiment_name": "failure_drop_5pct",
+  "operation_mode": "mixed",
+  "completed": 4988,
+  "failed": 12,
+  "retries": 263,
+  "failure_stage_counts": {
+    "http_status": 12
+  },
+  "failure_code_counts": {
+    "status_503": 12
+  },
+  "operation_counts": {
+    "count": 2500,
+    "sum": 2500
+  },
+  "correctness_sampled": 56,
+  "correctness_passed": 56,
+  "correctness_failed": 0
+}

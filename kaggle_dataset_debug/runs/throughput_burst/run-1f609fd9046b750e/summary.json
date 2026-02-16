@@ -1,0 +1,17 @@
+{
+  "run_id": "run-1f609fd9046b750e",
+  "experiment_name": "throughput_burst",
+  "operation_mode": "mixed",
+  "completed": 28761,
+  "failed": 0,
+  "retries": 0,
+  "failure_stage_counts": {},
+  "failure_code_counts": {},
+  "operation_counts": {
+    "count": 14380,
+    "sum": 14381
+  },
+  "correctness_sampled": 291,
+  "correctness_passed": 291,
+  "correctness_failed": 0
+}

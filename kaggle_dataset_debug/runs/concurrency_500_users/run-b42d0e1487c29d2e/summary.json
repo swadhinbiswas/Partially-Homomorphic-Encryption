@@ -1,0 +1,17 @@
+{
+  "run_id": "run-b42d0e1487c29d2e",
+  "experiment_name": "concurrency_500_users",
+  "operation_mode": "mixed",
+  "completed": 50000,
+  "failed": 0,
+  "retries": 0,
+  "failure_stage_counts": {},
+  "failure_code_counts": {},
+  "operation_counts": {
+    "count": 25000,
+    "sum": 25000
+  },
+  "correctness_sampled": 519,
+  "correctness_passed": 519,
+  "correctness_failed": 0
+}

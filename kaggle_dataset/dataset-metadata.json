@@ -1,0 +1,18 @@
+{
+  "title": "homomorphic_request",
+  "id": "swadhinbiswas/homomorphic_request",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "subtitle": "Benchmark data for a Paillier-based privacy-preserving API gateway",
+  "description": "Per-request and run-level benchmark data from a homomorphic encryption API gateway simulation. Includes latency, queueing, retry, failure taxonomy, and correctness sampling fields.",
+  "keywords": [
+    "homomorphic encryption",
+    "paillier",
+    "performance benchmark",
+    "privacy",
+    "distributed systems"
+  ]
+}
