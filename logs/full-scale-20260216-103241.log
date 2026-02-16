@@ -1,0 +1,32 @@
+2026/02/16 10:32:41.982711 ================================================================
+2026/02/16 10:32:41.982752   Privacy-First REST API Gateway — PHE Experiment Environment
+2026/02/16 10:32:41.982753 ================================================================
+2026/02/16 10:32:41.982897 Config: key_bits=1024 workers=16 queue=10000 data=data chunk=1000000 seed=42
+2026/02/16 10:32:42.169585 [PROXY POOL] downloaded 2803 fresh proxies from https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/all/data.txt
+2026/02/16 10:32:42.170030 [PROXY POOL] Loaded 2803 proxies (HTTP/S:1657 SOCKS5:404 SOCKS4:742 other:0) from configs/proxies.txt
+2026/02/16 10:32:42.170052 Proxy pool auto-refresh: every 30 minutes from configs/proxies.txt
+2026/02/16 10:32:42.170055 Generating Paillier key pair (1024 bits)...
+2026/02/16 10:32:42.189299 Key pair generated. Public key available to gateway; private key stays with simulator.
+2026/02/16 10:32:42.189486 Gateway starting on :8082
+2026/02/16 10:32:42.189493 Proxy starting on :8081 → gateway :8082
+2026/02/16 10:32:42.190025 Services ready.
+2026/02/16 10:32:42.190038 ═══════ EXPERIMENT: Concurrency Scaling ═══════
+2026/02/16 10:32:42.190040 [PROXY] config updated: latency=0s jitter=0s drop=0.00% (was: latency=0s drop=0.00%)
+2026/02/16 10:32:42.190048   [concurrency_1_users] run 1/2
+2026/02/16 10:32:42.190049 >>> [concurrency_1_users] starting
+2026/02/16 10:32:42.190639   [SIM] Proxy pool: 2803 real proxies (round-robin per user)
+2026/02/16 10:32:42.190649   [SIM] start: users=1 batch=10 expected=100 duration=0s proxies=2803
+2026/02/16 10:32:47.191363     [concurrency_1_users] completed=0 failed=1 rate=0.2/s elapsed=5.0s
+2026/02/16 10:32:52.191397     [concurrency_1_users] completed=0 failed=1 rate=0.1/s elapsed=10.0s
+2026/02/16 10:32:57.191184     [concurrency_1_users] completed=0 failed=2 rate=0.1/s elapsed=15.0s
+2026/02/16 10:33:02.190699     [concurrency_1_users] completed=0 failed=3 rate=0.1/s elapsed=20.0s
+2026/02/16 10:33:07.190977     [concurrency_1_users] completed=0 failed=4 rate=0.2/s elapsed=25.0s
+2026/02/16 10:33:12.191411     [concurrency_1_users] completed=0 failed=4 rate=0.1/s elapsed=30.0s
+2026/02/16 10:33:17.191544     [concurrency_1_users] completed=0 failed=5 rate=0.1/s elapsed=35.0s
+2026/02/16 10:33:22.191607     [concurrency_1_users] completed=0 failed=6 rate=0.1/s elapsed=40.0s
+2026/02/16 10:33:27.191425     [concurrency_1_users] completed=0 failed=7 rate=0.2/s elapsed=45.0s
+2026/02/16 10:33:32.190689     [concurrency_1_users] completed=0 failed=8 rate=0.2/s elapsed=50.0s
+2026/02/16 10:33:37.191243     [concurrency_1_users] completed=0 failed=8 rate=0.1/s elapsed=55.0s
+2026/02/16 10:33:42.191574     [concurrency_1_users] completed=0 failed=9 rate=0.1/s elapsed=60.0s
+2026/02/16 10:33:47.191279     [concurrency_1_users] completed=0 failed=10 rate=0.2/s elapsed=65.0s
+2026/02/16 10:33:52.190913     [concurrency_1_users] completed=0 failed=10 rate=0.1/s elapsed=70.0s

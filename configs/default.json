@@ -1,0 +1,63 @@
+{
+    "key_bits": 1024,
+    "gateway_port": 8082,
+    "proxy_port": 8081,
+    "forward_proxy_url": "",
+    "proxy_pool_file": "configs/proxies.txt",
+    "proxy_pool_url": "https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/all/data.txt",
+    "proxy_download_timeout_seconds": 30,
+    "proxy_refresh_minutes": 30,
+    "worker_count": 16,
+    "worker_queue_size": 10000,
+    "data_dir": "data",
+    "chunk_records": 1000000,
+    "seed": 42,
+    "http_timeout_seconds": 60,
+    "operation_mode": "mixed",
+    "correctness_sample_rate": 0.01,
+    "retry_max_attempts": 2,
+    "retry_backoff_ms": 150,
+    "runs_per_experiment": 2,
+    "experiments": {
+        "concurrency_scaling": {
+            "enabled": true,
+            "levels": [1, 10, 100, 500, 1000],
+            "batch_size": 10,
+            "requests_per_user": 100,
+            "proxy_latency_ms": 0,
+            "proxy_drop_rate": 0.0
+        },
+        "batch_scaling": {
+            "enabled": true,
+            "concurrency": 10,
+            "batch_sizes": [1, 10, 100, 1000],
+            "requests_per_user": 100,
+            "proxy_latency_ms": 0,
+            "proxy_drop_rate": 0.0
+        },
+        "latency_impact": {
+            "enabled": true,
+            "concurrency": 10,
+            "batch_size": 10,
+            "latencies_ms": [0, 10, 50, 100],
+            "requests_per_user": 100,
+            "proxy_drop_rate": 0.0
+        },
+        "throughput": {
+            "enabled": true,
+            "concurrency": 1000,
+            "batch_size": 10,
+            "duration_seconds": 30,
+            "proxy_latency_ms": 0,
+            "proxy_drop_rate": 0.0
+        },
+        "failure_injection": {
+            "enabled": true,
+            "concurrency": 50,
+            "batch_size": 10,
+            "drop_rates": [0.0, 0.01, 0.05],
+            "requests_per_user": 100,
+            "proxy_latency_ms": 0
+        }
+    }
+}
